@@ -8,4 +8,4 @@ def answer_call(request):
     resp = VoiceResponse()
     resp.say('Fuck the law they can eat my dick thats word the pimp')
     print(str(resp))
-    return Response(str(resp))
+    return Response(str(resp), content_type='text/xml')
